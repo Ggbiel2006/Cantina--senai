@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Cantina · Pedidos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&display=swap" />
+    <style>
+      * { box-sizing: border-box }
+      body { margin: 0; min-height: 100dvh; display: grid; place-items: center; background: linear-gradient(160deg, #EAF1FC 0%, #D6E4FB 100%); color: #0F2342;
+             font-family: "Andika", system-ui, sans-serif; padding: 24px 16px }
+      main { width: 100%; max-width: 760px }
+      h1 { font-size: clamp(26px, 5vw, 36px); margin: 0 0 6px; color: #0D2A66 }
+      p { color: #51627D; margin: 0 0 22px }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px }
+      a { display: block; background: #fff; border: 1.5px solid #C3D3EC; border-top: 5px solid #1E5BD8; border-radius: 14px; padding: 20px; color: inherit; text-decoration: none; box-shadow: 0 10px 28px -16px rgba(13,42,102,.45); transition: transform .15s, box-shadow .15s }
+      a:hover { transform: translateY(-3px); box-shadow: 0 16px 32px -16px rgba(30,91,216,.55) }
+      a b { display: block; font-size: 20px; margin-bottom: 4px; color: #1642A0 }
+      a span { color: #51627D; font-size: 14px }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Organizando os pedidos da cantina</h1>
+      <p>Abra os dois sistemas em abas diferentes. O pedido feito pelo aluno aparece na hora no painel da cantina.</p>
+      <div class="grid">
+        <a href="/aluno/"><b>Sistema do aluno</b><span>Cardápio, revisão do pedido e acompanhamento. Feito para celular.</span></a>
+        <a href="/cantina/"><b>Sistema da cantina</b><span>Painel da atendente: pedidos, preparo, entrega e disponibilidade.</span></a>
+      </div>
+    </main>
+  </body>
+</html>
